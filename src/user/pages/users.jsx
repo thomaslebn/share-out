@@ -1,5 +1,17 @@
 import React from "react";
 
-const Users = () => <h1> Users Page ! </h1>;
+import UserList from "../components/users-list/users-list";
 
-export default Users;
+const UsersPage = () => {
+  const USERS = [
+    {
+      id: "u1",
+      name: "Thomas",
+      image: "https://avatars.githubusercontent.com/u/77930163?v=4",
+      places: 3,
+    },
+  ];
+  return <UserList items={USERS} />;
+};
+
+export default UsersPage;

@@ -21,8 +21,7 @@ const DUMMY_PLACES = [
     id: "p2",
     title: "Tokyo Skytree",
     description: "The second tallest structure in the world 🇯🇵",
-    imageUrl:
-      "https://scitechdaily.com/images/Tokyo-Skytree-Night.jpg",
+    imageUrl: "https://scitechdaily.com/images/Tokyo-Skytree-Night.jpg",
     address: "1 Chome-1-2 Oshiage, Sumida City, Tokyo 131-8634, Japan",
     location: {
       lat: 35.710064,

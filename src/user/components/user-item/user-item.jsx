@@ -6,7 +6,7 @@ import Card from "../../../shared/components/UIElements/card/card";
 
 import "./user-item.css";
 
-const UserItem = ({ id, name, image, places }) => (
+const UserItem = ({ id, name, image, places: { length } }) => (
   <li className="user-item">
     <Card className="user-item__content">
       <Link to={`/${id}/places`}>
@@ -16,7 +16,7 @@ const UserItem = ({ id, name, image, places }) => (
         <div className="user-item__info">
           <h2> {name} </h2>
           <h3>
-            {places} {places === 1 ? "place" : "places"}
+            {length} {length === 1 ? "place" : "places"}
           </h3>
         </div>
       </Link>

@@ -22,7 +22,11 @@ const PlaceList = (props) => {
   return (
     <ul className="place-list">
       {props.items.map(({ ...otherPlaceProps }) => (
-        <PlaceItem key={otherPlaceProps.id} {...otherPlaceProps} />
+        <PlaceItem
+          key={otherPlaceProps.id}
+          {...otherPlaceProps}
+          onDelete={props.onDelete}
+        />
       ))}
     </ul>
   );

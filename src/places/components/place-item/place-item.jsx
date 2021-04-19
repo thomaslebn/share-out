@@ -52,7 +52,7 @@ const PlaceItem = (props) => {
         footer={<Button onClick={closeMapHandler}>CLOSE</Button>}
       >
         <div className="map-container">
-          <Map location={props.location} zoom={16} />
+          <Map location={props.coordinates} zoom={16} />
         </div>
       </Modal>
       <Modal
@@ -80,7 +80,10 @@ const PlaceItem = (props) => {
         <Card className="place-item__content">
           {isLoading && <LoadingSpinner asOverlay />}
           <div className="place-item__image">
-            <img src={props.image} alt={props.title} />
+            <img
+              src={`http://localhost:5000/${props.image}`}
+              alt={props.title}
+            />
           </div>
           <div className="place-item__info">
             <h2>{props.title}</h2>

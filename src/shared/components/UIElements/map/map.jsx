@@ -19,7 +19,7 @@ const Map = ({ location: { lat, lng } }) => {
       ></iframe>
       <script
         type="text/javascript"
-        src={process.env.REACT_APP_GOOGLE_MAP}
+        src="https://embedmaps.com/google-maps-authorization/script.js?id=5a33be79e53caf0a07dfec499abf84b7b481f165"
       ></script>
     </div>
   );

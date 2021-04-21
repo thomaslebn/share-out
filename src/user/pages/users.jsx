@@ -13,7 +13,7 @@ const Users = () => {
     const fetchUsers = async () => {
       try {
         const responseData = await sendRequest(
-          process.env.REACT_APP_BACKEND_URL + "/users"
+          "https://share-out-backend.herokuapp.com/api/users"
         );
 
         setLoadedUsers(responseData.users);
